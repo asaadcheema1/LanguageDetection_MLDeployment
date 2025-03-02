@@ -1,34 +1,38 @@
-# Deploy ML models with FastAPI, Docker, and Heroku
+# 🚀 Language Detection App Repository
 
-### 1. Develop and save the model with this Colab
+This repository contains a **language detection application** built using **scikit-learn**, **FastAPI**, and **Docker**. The model is trained using machine learning techniques, and once built, we package it into a container and deploy it seamlessly using **Heroku**.
 
-[Open Colab](https://colab.research.google.com/drive/1uaALcaatvxOu42IhQA4r0bahfdpw-Z7v?usp=sharing)
+---
 
-### 2. Create Docker container
-
+## 1️⃣ Build & Run Docker Container 🐳  
 ```bash
-docker build -t app-name .
-
-docker run -p 80:80 app-name
+docker build -t app-name .  
+docker run -p 80:80 app-name  
 ```
 
-### 3. Create Git repo
+---
 
-If you clone this repo this step is not needed. Or you can delete this git repo with `rm -rf .git` and start with a new one:
-
+## 2️⃣ Set Up Git Repo 🛠  
+*(Skip if already using a repo, or start fresh 👇)*  
 ```bash
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
+git init  
+git add .  
+git commit -m "Initial commit"  
+git branch -M main  
 ```
 
-### 4. Create Heroku project
+---
 
+## 3️⃣ Deploy to Heroku ☁️  
 ```bash
-heroku login
-heroku create your-app-name
-heroku git:remote your-app-name
-heroku stack:set container
-git push heroku main
+heroku login  
+heroku create your-app-name  
+heroku git:remote your-app-name  
+heroku stack:set container  
+git push heroku main  
 ```
+
+---
+
+**Note:** Fully inspired by AssemblyAI 😉
+
