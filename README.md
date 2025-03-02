@@ -1,4 +1,4 @@
-# 🚀 Language Detection App Repository
+# 🚀 Language Detection App 
 
 This repository contains a **language detection application** built using **scikit-learn**, **FastAPI**, and **Docker**. The model is trained using machine learning techniques, and once built, we package it into a container and deploy it seamlessly using **Heroku**.
 
